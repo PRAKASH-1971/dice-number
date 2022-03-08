@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<style>
+  #image {
+    width: auto;
+    height: auto;
+    margin: auto;
+    animation: rotation 2s infinite linear;
+  }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  button{
+      padding: 5px;
+      font-size: 15px;
+      color: white;
+      background-color: black;
+      border: none;
+    }
+</style>
+<body>
+  <div>
+    <!--Create a button that says, 'Throw dice' button. Give this button HTML id as "throw_dice"-->
+    <img src="https://dictionary.cambridge.org/images/thumb/dice_noun_002_10624.jpg?version=5.0.222" alt="" id="image">
+    <button id="throw_dice" onclick="random(0,6)">Throw dice</button>
+  </div>
+</body>
+
+</html>
+<script src="/scripts/index.js"></script>
